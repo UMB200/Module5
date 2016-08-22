@@ -19,7 +19,7 @@ var allCategoriesUrl =
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl = 
-  "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
+  "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl, 
-  //[...], // ***** <---- TODO: STEP 1: Substitute [...] ******
   buildAndShowHomeHTML,
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
